@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.parent {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+}
+
+.child {
+  height: 100px;
+  width: 100px;
+  background: #000;
+}
+
+/*! 1. Using Flex */
+
+/* .parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/*! 1. Using Margin */
+/* .parent {
+  display: grid;
+}
+.child {
+  margin: auto;
+} */
+
+/*! 1. Grid Property */
+/* .parent {
+  display: grid;
+  place-items: center;
+} */
+
+/*! 1. Absolute Property*/
+
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
