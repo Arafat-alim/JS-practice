@@ -1,9 +1,11 @@
 defining a GRID
 
+//! container css
 display : grid;
 grid-template-rows :
 grid-template-columns : 
-
-Aligning items 
+ - Aligning items 
 justift-items (along horizontal axis)
 align-items (along vertical axis)
+justify-content: (mov my whole grid in a horizontal axis)
+align-content : (mov my whole grid in a vertical axis)

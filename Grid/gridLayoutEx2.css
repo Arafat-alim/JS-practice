@@ -15,6 +15,13 @@
   /* grid-template: rows / columns; */
   grid-template: repeat(3, 100px) / repeat(2, 100px);
   border: 3px solid red;
+  /* each Items */
+  justify-items: center;
+  align-items: center;
+  /* Entire Grid  */
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
 }
 
 .boxes {
