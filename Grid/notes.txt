@@ -1,0 +1,9 @@
+defining a GRID
+
+display : grid;
+grid-template-rows :
+grid-template-columns : 
+
+Aligning items 
+justift-items (along horizontal axis)
+align-items (along vertical axis)
