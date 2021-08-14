@@ -1,0 +1,32 @@
+/* box-model */
+/* this is the best way to create */
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+} */
+
+.container {
+  display: grid;
+  grid-template: 140px auto 70px / 30fr 70fr;
+  grid-template-areas: "header header" "sidebar content" "footer footer";
+  gap: 10px;
+  /* border: 3px solid green; */
+  height: 100vh;
+}
+
+.boxes {
+  background: gold;
+}
+
+.box-header {
+  grid-area: header;
+}
+
+.box-footer {
+  grid-area: footer;
+}
+
+.box-content {
+  box-sizing: border-box;
+  padding: 15px;
+}
