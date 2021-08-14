@@ -9,15 +9,18 @@
   display: grid;
   /* 3x2 row x col */
   /* grid-template-rows: 100px 100px 100px; */
-  grid-template-rows: repeat(3, 100px);
+  /* grid-template-rows: repeat(3, 100px); */
   /* grid-template-columns: 100px 100px; */
-  grid-template-columns: repeat(2, 100px);
+  /* grid-template-columns: repeat(2, 100px); */
   /* grid-template: rows / columns; */
-  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  /* grid-template: repeat(3, 100px) / 100px 30% 70%; */
+  grid-template: 100px auto 100px / 27fr 45fr;
   border: 3px solid red;
+  height: 100vh;
+  gap: 10px;
   /* each Items */
-  justify-items: stretch; /* by default strectch hee rehta hai  */
-  align-items: stretch; /* by default strectch hee rehta hai  */
+  /* justify-items: stretch; by default strectch hee rehta hai  */
+  /* align-items: stretch; by default strectch hee rehta hai  */
 }
 
 .boxes {
@@ -25,4 +28,16 @@
   /* width: 5rem; */
   /* stretch code run tabhi hee hoga jab ye log ka value empty */
   background-color: gold;
+}
+
+.box-header {
+  grid-column: 1 / -1;
+}
+
+.box-footer {
+  grid-column: 1 / -1;
+}
+
+.box-content {
+  padding: 15px;
 }

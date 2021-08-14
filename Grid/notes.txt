@@ -13,3 +13,35 @@ align-content : (mov my whole grid in a vertical axis)
 justify-items: center; //stretch(by default) (remove the box width)
 align-items: center; //stretch(by default) (remove the box height)
 (but you need to remove the box height and width)
+
+ grid-template: repeat(3, 100px) / 100px 30% 70%; - dont use percentage here (use fr)
+
+GAP
+row-gap
+column-gap
+gap (short hand) : row col
+
+//! container me do
+PLACING ITEMS IN NAMED AREAS ( BEST WALA)
+grid-template-areas: 
+"header  header"
+"sidebar sidebar"
+"footer  footer"
+".       footer" //any naming convention i can give
+//! element me do
+grid-area: header; (note no quotation)
+
+//! Elements mein dena hoga
+PLACING ITEMS in GRID -(want my first item to take entire place ** yehi wala property hai boss)
+grid-row
+grid-column
+grid-area (short hand) : row col
+
+grid-column: 1(Start) / -1(last jitna hai utna)
+
+.box-header {
+  grid-column: 1 / -1;
+  grid-row: 2; (first row me rahega toh shift hokr dusre row me ajyga) 
+  grid-row: 2/ 4; (row 2 mein ayega or go to 2  more row length lega)
+}
+
