@@ -1,0 +1,27 @@
+/* basic way to start */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  /* 3x2 row x col */
+  /* grid-template-rows: 100px 100px 100px; */
+  grid-template-rows: repeat(3, 100px);
+  /* grid-template-columns: 100px 100px; */
+  grid-template-columns: repeat(2, 100px);
+  /* grid-template: rows / columns; */
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  border: 3px solid red;
+  /* each Items */
+  justify-items: stretch; /* by default strectch hee rehta hai  */
+  align-items: stretch; /* by default strectch hee rehta hai  */
+}
+
+.boxes {
+  height: 5rem;
+  width: 5rem;
+  background-color: gold;
+}
