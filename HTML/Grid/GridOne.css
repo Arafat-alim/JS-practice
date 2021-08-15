@@ -1,0 +1,22 @@
+/*! Defining a Grid  */
+
+/* * {
+  box-sizing: border-box;
+} */
+body {
+  margin: 40px;
+}
+/* parent class hua isi me grid apply hoga  */
+.wrapper {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.box {
+  background-color: #444;
+  padding: 50px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 150%;
+}
