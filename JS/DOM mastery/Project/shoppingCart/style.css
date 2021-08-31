@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+.input {
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+button {
+  padding: 0.5rem 1rem;
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  /* transform: scaley(-1); */
+}
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
