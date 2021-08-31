@@ -1,4 +1,4 @@
-//Event Propagation - Capturing and Bubbling
+//!Event Propagation - Capturing and Bubbling
 // ! Bubbling
 var gparent = document.querySelector(".grandParent");
 gparent.addEventListener(
@@ -6,7 +6,7 @@ gparent.addEventListener(
   () => {
     console.log("Grand Parent");
   },
-  true
+  false
 );
 
 var parent = document.querySelector(".parent");
@@ -21,8 +21,10 @@ parent.addEventListener(
 var child = document.querySelector(".child");
 child.addEventListener(
   "click",
-  () => {
+  (e) => {
     console.log("child");
+    e.stopPropagation();
   },
-  true
+
+  false
 );
