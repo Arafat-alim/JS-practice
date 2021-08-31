@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+}
+
+.box {
+  background-color: #444;
+  font-size: 150%;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.a {
+  grid-column-start: 2;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
