@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Target Vs Event Current Target</title>
+  </head>
+  <style>
+    .one {
+      background-color: red;
+      padding: 20px;
+    }
+    .two {
+      background-color: blueviolet;
+      padding: 20px;
+    }
+    .three {
+      background-color: chartreuse;
+      padding: 20px;
+    }
+    .four {
+      background-color: cornflowerblue;
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <h1>Target V CurrentTarget</h1>
+    <div id="one" class="one" data-name="1">
+      1
+      <div id="two" class="two" data-name="2">
+        2
+        <div id="three" class="three" data-name="3">
+          3
+          <div id="four" class="four" data-name="4">4</div>
+        </div>
+      </div>
+    </div>
+    <script src="../targetEvent/bubblingEx1.js"></script>
+  </body>
+</html>
