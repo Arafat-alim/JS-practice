@@ -17,6 +17,7 @@ var promise = new Promise((resolve, reject) => {
 setTimeout(() => {
   userLoggin = false;
 }, 5000);
+
 promise
   .then(() => {
     //if my promise is success then
