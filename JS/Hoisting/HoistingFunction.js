@@ -7,6 +7,7 @@ sayGoodbye(); //call nh kr skte q ke hoisting nh hota isme -> declaration nh hua
 console.log(pop); //error because const doesnt support hoisiing
 
 function sayHello() {} //it support hoisting -> code kachra
+
 //! 2. function expression
 const sayGoodbye = function () {}; //it doesnt support hoisting (suprb)
 
