@@ -15,10 +15,13 @@ h1 {
 
 input[type="button"] {
   width: 100%;
-
-  color: #ffffff;
 }
 input[type="text"] {
   width: 100%;
   padding: 0.3rem 1rem;
+}
+
+input[type="button"]:hover {
+  background-color: yellow;
+  color: #000000;
 }
