@@ -25,7 +25,7 @@
 // console.log(strng3.trimEnd()); //"    hello Boss"
 // console.log(strng3.trimRight()); //"    hello Boss";
 
-// ! How do you check whether a string contains a substring - 3 ways to do this
+// ! Q. How do you check whether a string contains a substring - 3 ways to do this
 //! 1st way - string.prototype.includes()
 let mainstring = "hello Everyone!",
   substring = "hell";
@@ -39,3 +39,6 @@ let string = "hello boss!",
 
 let ans1 = string.indexOf(subString);
 console.log(ans1); // 0 means true
+
+// ! Q. Slice Methods
+let arr = [];
