@@ -1,6 +1,6 @@
 //! very basic
 
-// in js we can create an object directly
+//! in js we can create an object directly
 
 let person1 = {
   name: "Arafat",
@@ -11,7 +11,7 @@ let person1 = {
 console.log(person1);
 
 //!  creating an object usigng function - teen way hai - but single hee bolenge
-// 1)
+//! 1)
 function creatingStudent(name, rol, marks) {
   var student1 = {};
 
@@ -22,13 +22,17 @@ function creatingStudent(name, rol, marks) {
 
 var obj1 = creatingStudent("Aquib", 27, 45);
 console.log(obj1);
-//2)
-function createStudent(name, rol, marks) {
-  var student = {
-    this.student = name,
-    this.rol,
-    this.marks,
-  };
+
+//! 2nd
+function createStu(name, roll, marks) {
+  var object2 = {};
+  object2.name = name;
+  object2.roll = roll;
+  object2.marks = marks;
+  return object2;
 }
-var obj2 = createStudent("Ahmed", 45, 98);
-console.log(obj2);
+
+var student2 = createStu("Romeo", 15, 78);
+console.log(student2);
+
+// ! Must see the constuctor.js
