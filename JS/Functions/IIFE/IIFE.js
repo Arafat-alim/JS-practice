@@ -1,4 +1,4 @@
-//! IIFE - Immediate Invoked Function Expression
+//! IIFE - Immediate Invoked Function Expression - a function calls itself
 // syntax
 // (function(){...}())
 
