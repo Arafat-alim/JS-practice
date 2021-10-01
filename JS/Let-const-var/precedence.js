@@ -6,4 +6,5 @@ function show() {
   msg = "Dont know! King COmeback soon";
   console.log(msg);
 }
+console.log(msg);
 show();
