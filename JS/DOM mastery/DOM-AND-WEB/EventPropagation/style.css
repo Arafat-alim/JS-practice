@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+div {
+  border: 1px solid #000;
+  padding: 5rem;
+}
+
+table {
+  border: 1px solid darkslategray;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+}
+
+td {
+  border: 1px solid darkgray;
+  padding: 5rem;
+  cursor: pointer;
+}
