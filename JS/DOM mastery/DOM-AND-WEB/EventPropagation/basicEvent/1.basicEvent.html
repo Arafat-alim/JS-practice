@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Events</title>
+  </head>
+  <body>
+    <button onclick="alert('The Inline way')">The inlineway</button>
+    <button onclick="myFun()">Common way</button>
+    <button id="btn">Binding Event Later</button>
+    <button id="btn1">Binding with Listener</button>
+  </body>
+  <script>
+    function myFun() {
+      alert("The common way");
+    }
+
+    const btn = document.getElementById("btn");
+    btn.onclick = function () {
+      alert("Event Bound later");
+    };
+
+    const btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click", function () {
+      alert("Bound With listener");
+    });
+  </script>
+</html>
