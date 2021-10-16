@@ -1,0 +1,85 @@
+<!-- ! Very important input events -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Event</title>
+    <style>
+      div {
+        padding: 1rem;
+        border-radius: 5px;
+        text-align: center;
+        background-color: black;
+        width: 20%;
+        height: 500px;
+        color: #fff;
+        box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      div:hover {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+      }
+      input,
+      select {
+        margin: 10px;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="divE">
+      <h1 id="msg">Event Status</h1>
+      <!--! TextBox -->
+      <input
+        type="text"
+        onchange="eHandler('Event onchange')"
+        onfocus="eHandler('Event onFocus')"
+      />
+      <br />
+      <input type="text" />
+      <br />
+      <!-- !Check box -->
+      CheckBox - <input type="checkBox" onchange="eHandler(this.checked)" />
+      <br />
+      <!-- ! Radio Button -->
+      Radio Button -
+      <input
+        type="radio"
+        value="Male"
+        name="r"
+        onchange="eHandler(`${this.value} and ${this.checked}`)"
+      />
+      <input
+        type="radio"
+        value="Female"
+        name="r"
+        onchange="eHandler(`${this.value} and ${this.checked}`)"
+      />
+      <br />
+      <!-- ! Select box -->
+      <!-- <select name="" id="" onchange="eHandler(`${this.value}`)"> -->
+      <select
+        name=""
+        id=""
+        onchange="eHandler(`${this.options[this.selectedIndex].text}`)"
+      >
+        <option value="1">List 1</option>
+        <option value="2">List 2</option>
+        <option value="3">List 3</option>
+        <option value="4">List 4</option>
+      </select>
+      <br />
+      <input type="text" oninput="eHandler(this.value)" />
+    </div>
+
+    <script>
+      function eHandler(msg) {
+        document.getElementById("msg").innerHTML = msg;
+      }
+    </script>
+  </body>
+</html>

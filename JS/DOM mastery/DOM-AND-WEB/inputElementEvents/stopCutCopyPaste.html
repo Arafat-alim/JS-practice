@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Events - stopping Cut copy and paste</title>
+    <style>
+      div {
+        padding: 1rem;
+        border-radius: 5px;
+        text-align: center;
+        background-color: black;
+        width: 20%;
+        height: 500px;
+        color: #fff;
+        box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      div:hover {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+      }
+      input,
+      select {
+        margin: 10px;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+       <div id="divE">
+      <h1 id="msg">Event Status</h1>
+      <!--! TextBox -->
+      <input
+        type="text"
+        oncut="eHandler('Event Oncut')"
+        onpaste="event.preventDefault()"
+        oncopy="return false"
+      />
+    <script>
+        function eHandler(msg){
+            document.getElementById("msg").innerHTML = msg
+        }
+    </script>
+   
+  </body>
+</html>
