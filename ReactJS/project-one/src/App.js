@@ -1,11 +1,11 @@
 import "./App.css";
 
-import EventsReact5 from "./components/EventsReact5";
+import EventsReact6 from "./components/EventsReact6";
 
 function App() {
   return (
     <div className="App">
-      <EventsReact5 />
+      <EventsReact6 />
     </div>
   );
 }
