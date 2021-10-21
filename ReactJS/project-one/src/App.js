@@ -1,10 +1,11 @@
 import "./App.css";
-import SingleStateUseState9 from "./components/SingleStateUseState9";
+
+import ClassComponentState11 from "./components/ClassComponentState11";
 
 function App() {
   return (
     <div className="App">
-      <SingleStateUseState9 />
+      <ClassComponentState11 />
     </div>
   );
 }
