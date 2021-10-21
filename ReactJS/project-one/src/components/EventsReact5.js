@@ -11,11 +11,21 @@ function EventsReact5() {
   function minValue() {
     setCount(count - 1);
   }
+
+  //styling
+  const styling = {
+    backgroundColor: "salmon",
+    fontSize: "10px",
+  };
   return (
     <div>
       <h1>{count}</h1>
-      <button onClick={addValue}>(+)</button>
-      <button onClick={minValue}>(-)</button>
+      <button style={{ backgroundColor: "red" }} onClick={addValue}>
+        (+)
+      </button>
+      <button style={styling} onClick={minValue}>
+        (-)
+      </button>
     </div>
   );
 }
