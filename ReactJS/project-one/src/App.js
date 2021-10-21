@@ -1,11 +1,10 @@
 import "./App.css";
-
-import JSXReact7 from "./components/JSXReact7";
+import SingleStateUseState9 from "./components/SingleStateUseState9";
 
 function App() {
   return (
     <div className="App">
-      <JSXReact7 />
+      <SingleStateUseState9 />
     </div>
   );
 }
