@@ -1,11 +1,11 @@
 import "./App.css";
 
-import ClassComponentState11 from "./components/ClassComponentState11";
+import UseEffectSkipStates from "./components/UseEffectSkipStates15";
 
 function App() {
   return (
     <div className="App">
-      <ClassComponentState11 />
+      <UseEffectSkipStates />
     </div>
   );
 }
