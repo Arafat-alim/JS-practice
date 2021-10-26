@@ -1,10 +1,10 @@
 import "./App.css";
-import RefsFuncComp19 from "./components/RefsFuncComp19";
+import Index from "./components/Optimizing/IndexFile";
 
 function App() {
   return (
     <div className="App">
-      <RefsFuncComp19 />
+      <Index />
     </div>
   );
 }
