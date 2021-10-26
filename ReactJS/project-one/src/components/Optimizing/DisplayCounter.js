@@ -12,4 +12,4 @@ function DisplayCounter(props) {
   );
 }
 
-export default DisplayCounter;
+export default React.memo(DisplayCounter);

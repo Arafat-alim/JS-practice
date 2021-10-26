@@ -14,4 +14,4 @@ function ChangeState(props) {
   );
 }
 
-export default ChangeState;
+export default React.memo(ChangeState);

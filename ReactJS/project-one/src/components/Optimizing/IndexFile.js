@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import ChangeState from "./ChangeState";
 import DisplayCounter from "./DisplayCounter";
 import DisplayFlag from "./DisplayFlag";
@@ -9,13 +9,14 @@ function IndexFile() {
   //! making states
   const [cnt, setCount] = useState(0);
   const [mflag, setFlag] = useState(true);
-  //! function calls to update the state
-  const handleCounter = () => {
+  //! function calls to update the state - adding callback here only
+  const handleCounter = useCallback(() => {
     setCount(cnt + 1);
-  };
-  const handleFlag = () => {
+  }, [cnt]);
+
+  const handleFlag = useCallback(() => {
     setFlag(!mflag);
-  };
+  }, [mflag]);
 
   return (
     <div>

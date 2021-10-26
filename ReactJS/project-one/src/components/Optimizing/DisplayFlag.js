@@ -12,4 +12,4 @@ function DisplayFlag(props) {
   );
 }
 
-export default DisplayFlag;
+export default React.memo(DisplayFlag);
