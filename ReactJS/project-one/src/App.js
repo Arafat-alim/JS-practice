@@ -1,11 +1,10 @@
 import "./App.css";
-
-import UseEffectSkipStates from "./components/UseEffectSkipStates15";
+import UseEffectCondRen16 from "./components/UseEffectCondRen16";
 
 function App() {
   return (
     <div className="App">
-      <UseEffectSkipStates />
+      <UseEffectCondRen16 />
     </div>
   );
 }
