@@ -3,3 +3,5 @@ const test = function () {
 };
 
 test();
+
+// it doesnt support hoisting
