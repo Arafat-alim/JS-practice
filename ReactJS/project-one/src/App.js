@@ -1,10 +1,10 @@
 import "./App.css";
-import UseEffectCondRen16 from "./components/UseEffectCondRen16";
+import RefsFuncComp19 from "./components/RefsFuncComp19";
 
 function App() {
   return (
     <div className="App">
-      <UseEffectCondRen16 />
+      <RefsFuncComp19 />
     </div>
   );
 }
