@@ -1,10 +1,10 @@
 import "./App.css";
-import Index from "./components/Optimizing/IndexFile";
+import ComponentWiseList from "./components/ListRendering/ComponentWiseList";
 
 function App() {
   return (
     <div className="App">
-      <Index />
+      <ComponentWiseList />
     </div>
   );
 }
