@@ -1,7 +1,22 @@
-p {
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  border: 10px solid gold;
-  margin: 10px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.box {
+  /* display: inline;  */ /* Not having a width and height property */
+  display: inline-block;
+
+  width: 120px;
+  background-color: gold;
+  height: 120px;
+  /* padding: 10px; */
+  /* border: 10px solid gold; */
+  /* margin: 10px; */
+}
+
+/* pseudo Element */
+.box::before {
+  content: "Hello";
 }
