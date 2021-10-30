@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Website Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .container {
+        display: grid;
+        grid-template: 100px auto 70px / 30fr 70fr;
+        grid-template-areas: "header header" "sidebar content" "footer footer";
+        grid-gap: 0.5em;
+        height: 100vh;
+      }
+      .boxes {
+        background-color: gold;
+      }
+
+      .box-header {
+        grid-area: header;
+      }
+      .box-footer {
+        grid-area: footer;
+      }
+      .box-sidebar {
+        grid-area: sidebar;
+      }
+      .box-content {
+        grid-area: content;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="boxes box-header">Header</div>
+      <div class="boxes box-sidebar">Sidebar</div>
+      <div class="boxes box-content">Content</div>
+      <div class="boxes box-footer">Footer</div>
+    </div>
+  </body>
+</html>
