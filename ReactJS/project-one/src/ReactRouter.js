@@ -2,7 +2,7 @@ import React from "react";
 import About from "./Router/About";
 import Home from "./Router/Home";
 import Product from "./Router/Product";
-import { Route, Link, Switch, Redirect } from "react-router-dom";
+import { Route, Link, Switch, Redirect, NavLink } from "react-router-dom";
 import Tutorial from "./Router/Tutorial";
 import Tdetails from "./Router/Tdetails";
 import Error404 from "./Router/Error404";
@@ -11,17 +11,44 @@ function ReactRouter() {
   return (
     <div>
       <ul>
-        <li>
-          <Link to="/">Home</Link>
+        <li className="mainMenu">
+          <NavLink
+            activeClassName="selected"
+            to="/home"
+            activeStyle={{ fontWeight: "bold", color: "Red" }}
+          >
+            Home
+          </NavLink>
         </li>
-        <li>
-          <Link to="/product">Product</Link>
+        <li className="mainMenu">
+          <NavLink
+            activeClassName="selected"
+            to="/product"
+            activeStyle={{ fontWeight: "bold", color: "Red" }}
+          >
+            Product
+          </NavLink>
         </li>
-        <li>
-          <Link to="/tutorial">Tutorial</Link>
+        <li className="mainMenu">
+          <NavLink
+            activeClassName="selected"
+            to="/tutorial"
+            isActive={(match, location) => {
+              console.log(match, location);
+            }}
+            activeStyle={{ fontWeight: "bold", color: "Red" }}
+          >
+            Tutorial
+          </NavLink>
         </li>
-        <li>
-          <Link to="/about">About Us</Link>
+        <li className="mainMenu">
+          <NavLink
+            activeClassName="selected"
+            to="/about"
+            activeStyle={{ fontWeight: "bold", color: "Red" }}
+          >
+            About Us
+          </NavLink>
         </li>
       </ul>
       <hr />
