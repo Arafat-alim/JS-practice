@@ -6,7 +6,7 @@ function Error404() {
   console.log(location);
   return (
     <div>
-      <h1>Error - 404 -> {location.pathname} </h1>
+      <h1>Error - 404 - {location.pathname} </h1>
     </div>
   );
 }
