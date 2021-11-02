@@ -5,6 +5,7 @@ import Product from "./Router/Product";
 import { Route, Link, Switch, Redirect } from "react-router-dom";
 import Tutorial from "./Router/Tutorial";
 import Tdetails from "./Router/Tdetails";
+import Error404 from "./Router/Error404";
 
 function ReactRouter() {
   return (
@@ -42,6 +43,9 @@ function ReactRouter() {
         </Route>
         <Route path="/home">
           <Home />
+        </Route>
+        <Route path="*">
+          <Error404 />
         </Route>
       </Switch>
     </div>
