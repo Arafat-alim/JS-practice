@@ -1,10 +1,10 @@
 import "./App.css";
-import Main from "./project/Main";
+import Purchased from "./Context/Purchased";
 
 function App() {
   return (
     <div className="App">
-      <Main />
+      <Purchased />
     </div>
   );
 }
