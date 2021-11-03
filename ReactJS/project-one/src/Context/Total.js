@@ -1,5 +1,5 @@
 // ! Global store
-
+//!  using MyContext.Consumer
 import React from "react";
 import TotalContext from "./store/total-context";
 

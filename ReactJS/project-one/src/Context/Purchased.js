@@ -3,6 +3,7 @@ import "../../src/App.css";
 import Cart from "./Cart";
 import Total from "./Total";
 import TotalContext from "./store/total-context";
+import UseContextTotal from "./UseContextTotal";
 
 function Purchased() {
   // making two states
@@ -45,7 +46,7 @@ function Purchased() {
       </div>
       <Cart cart={cart} />
       <TotalContext.Provider value={total}>
-        <Total />
+        <UseContextTotal />
       </TotalContext.Provider>
     </div>
   );
