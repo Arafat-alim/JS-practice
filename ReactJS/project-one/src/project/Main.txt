@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "../../src/App.css";
-import Cart from "./Cart";
-import Total from "./Total";
 
 function Main() {
   // making two states
@@ -42,8 +40,20 @@ function Main() {
           })}
         </select>
       </div>
-      <Cart cart={cart} />
-      <Total total={total} />
+      <div className="customeDiv">
+        <h1>Cart Component</h1>
+        <hr />
+        <ul>
+          {cart.map((product, index) => {
+            return <li key={index.toString()}>{product.pName}</li>;
+          })}
+        </ul>
+      </div>
+      <div className="customeDiv">
+        <h1>Total Component</h1>
+        <hr />
+        <h2>Total - {total}</h2>
+      </div>
     </div>
   );
 }
