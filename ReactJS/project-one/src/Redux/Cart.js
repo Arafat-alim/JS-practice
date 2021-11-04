@@ -1,10 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Cart = () => {
-  const cart = [
-    { id: 1, pName: "Apple", Cost: 20 },
-    { id: 2, pName: "Mango", Cost: 30 },
-  ];
+  const cart = useSelector((state) => state.cart);
   return (
     <div className="customeDiv">
       <h2>Cart Component</h2>

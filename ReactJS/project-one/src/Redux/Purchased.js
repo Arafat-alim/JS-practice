@@ -1,12 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
-const purchased = () => {
-  const products = [
-    { id: 1, pName: "Apple", Cost: 20 },
-    { id: 2, pName: "Mango", Cost: 30 },
-    { id: 3, pName: "Banana", Cost: 40 },
-    { id: 4, pName: "Grapes", Cost: 50 },
-  ];
+const Purchased = () => {
+  const products = useSelector((state) => state.products);
   return (
     <div className="customeDiv">
       <h3>Purchased Component</h3>
@@ -15,7 +11,7 @@ const purchased = () => {
         {products.map((product) => {
           return (
             <option value={product.pName} key={product.id}>
-              {product.pName}
+              {product.pName} - ${product.cost}
             </option>
           );
         })}
@@ -24,4 +20,4 @@ const purchased = () => {
   );
 };
 
-export default purchased;
+export default Purchased;

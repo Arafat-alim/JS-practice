@@ -1,7 +1,12 @@
 import { createStore } from "redux";
 //! 1. creatinf a reducer function
 const initData = {
-  products: [],
+  products: [
+    { id: 1, pName: "Apple", cost: 20 },
+    { id: 2, pName: "Mango", cost: 30 },
+    { id: 3, pName: "Banana", cost: 40 },
+    { id: 4, pName: "Grapes", cost: 50 },
+  ],
   cart: [],
   total: 0,
 };
