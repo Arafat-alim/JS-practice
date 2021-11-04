@@ -1,5 +1,5 @@
 import { createStore } from "redux";
-//! 1. creatinf a reducer function
+//! 1. creating a reducer function
 const initData = {
   products: [
     { id: 1, pName: "Apple", cost: 20 },
@@ -11,6 +11,15 @@ const initData = {
   total: 0,
 };
 const reducer = (state = initData, action) => {
+  //   console.log(action);
+  if (action.type === "PURCHASED") {
+    return {
+      //   products: state.products,
+      ...state,
+      cart: [...state.cart, action.payLoad],
+      total: state.total + parseInt(action.payLoad.cost),
+    };
+  }
   return state;
 };
 
