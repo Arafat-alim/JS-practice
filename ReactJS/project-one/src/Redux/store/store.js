@@ -11,7 +11,7 @@ const initData = {
   total: 0,
 };
 const reducer = (state = initData, action) => {
-  //   console.log(action);
+  console.log(action);
   if (action.type === "PURCHASED") {
     return {
       //   products: state.products,
