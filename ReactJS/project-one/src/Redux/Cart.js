@@ -1,4 +1,5 @@
 import React from "react";
+import { DELETE } from "./store/actions";
 import { useDispatch, useSelector } from "react-redux";
 
 const Cart = () => {
@@ -6,7 +7,7 @@ const Cart = () => {
   const user = useSelector((state) => state.pr.loginDet);
   const dispatch = useDispatch();
   const handlerDelete = (index, price) => {
-    dispatch({ type: "DELETE", payLoad: { index, price } });
+    dispatch({ type: DELETE, payLoad: { index, price } });
   };
   return (
     <div className="customeDiv">

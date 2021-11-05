@@ -1,3 +1,4 @@
+import * as actions from "./actions";
 //! 1. creating a reducer function
 const initData = {
   products: [
@@ -11,7 +12,7 @@ const initData = {
 };
 const productReducer = (state = initData, action) => {
   console.log(action);
-  if (action.type === "PURCHASED") {
+  if (action.type === actions.PURCHASED) {
     return {
       //   products: state.products,
       ...state,

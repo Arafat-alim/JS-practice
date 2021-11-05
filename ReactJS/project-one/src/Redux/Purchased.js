@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-
+import { PURCHASED } from "./store/actions";
 const Purchased = () => {
   const products = useSelector((state) => state.pr.products);
   const user = useSelector((state) => state.lr.loginDet);
@@ -10,7 +10,7 @@ const Purchased = () => {
 
     const cost = e.target.value;
     let obj = { pName, cost };
-    dispatch({ type: "PURCHASED", payLoad: obj }); //it calls the reducer function
+    dispatch({ type: PURCHASED, payLoad: obj }); //it calls the reducer function
   };
 
   return (

@@ -1,3 +1,4 @@
+import * as actions from "./actions";
 //! 1. creating a reducer function
 const initData = {
   users: ["Admin", "Manager", "End-user"],
@@ -5,7 +6,7 @@ const initData = {
 };
 const loginReducer = (state = initData, action) => {
   console.log(action);
-  if (action.type === "LOGIN") {
+  if (action.type === actions.LOGIN) {
     return {
       ...state,
       loginDet: action.loginDet,
