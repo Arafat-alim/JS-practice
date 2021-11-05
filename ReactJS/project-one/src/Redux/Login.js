@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 
 const Login = () => {
-  const user = useSelector((state) => state.users);
+  const user = useSelector((state) => state.lr.users);
   const dispatch = useDispatch();
   const loginHandler = (e) => {
     const loginDet = e.target.options[e.target.selectedIndex].text;

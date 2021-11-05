@@ -2,8 +2,8 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const Cart = () => {
-  const cart = useSelector((state) => state.cart);
-  const user = useSelector((state) => state.loginDet);
+  const cart = useSelector((state) => state.pr.cart);
+  const user = useSelector((state) => state.pr.loginDet);
   const dispatch = useDispatch();
   const handlerDelete = (index, price) => {
     dispatch({ type: "DELETE", payLoad: { index, price } });

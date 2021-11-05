@@ -2,8 +2,8 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 const Purchased = () => {
-  const products = useSelector((state) => state.products);
-  const user = useSelector((state) => state.loginDet);
+  const products = useSelector((state) => state.pr.products);
+  const user = useSelector((state) => state.lr.loginDet);
   const dispatch = useDispatch();
   const purchaseHandler = (e) => {
     const pName = e.target.options[e.target.selectedIndex].text;
