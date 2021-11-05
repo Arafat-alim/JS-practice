@@ -5,7 +5,9 @@ export const DELETE = "DELETE";
 // ! Action creator
 export const validateUser = (loginDet) => {
   //! API Calls
-  setTimeout(() => {
-    dispatch({ type: LOGIN, loginDet });
-  }, 2000);
+  return (dispatch) => {
+    setTimeout(() => {
+      dispatch({ type: LOGIN, loginDet });
+    }, 2000);
+  };
 };
