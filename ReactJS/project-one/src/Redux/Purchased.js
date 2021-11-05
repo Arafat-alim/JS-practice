@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 const Purchased = () => {
   const products = useSelector((state) => state.products);
+  const user = useSelector((state) => state.loginDet);
   const dispatch = useDispatch();
   const purchaseHandler = (e) => {
     const pName = e.target.options[e.target.selectedIndex].text;
@@ -14,7 +15,7 @@ const Purchased = () => {
 
   return (
     <div className="customeDiv">
-      <h3>Purchased Component</h3>
+      <h3>Purchased Component - Users:- {user}</h3>
       <hr />
       <select onChange={(e) => purchaseHandler(e)}>
         {products.map((product, index) => {

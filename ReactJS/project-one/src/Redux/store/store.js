@@ -9,6 +9,8 @@ const initData = {
   ],
   cart: [],
   total: 0,
+  users: ["Admin", "Manager", "End-user"],
+  loginDet: "None",
 };
 const reducer = (state = initData, action) => {
   console.log(action);
@@ -25,6 +27,12 @@ const reducer = (state = initData, action) => {
       ...state,
       cart: state.cart.filter((i, index) => index !== action.payLoad.index),
       total: state.total - parseInt(action.payLoad.price),
+    };
+  }
+  if (action.type === "LOGIN") {
+    return {
+      ...state,
+      loginDet: action.loginDet,
     };
   }
   return state;

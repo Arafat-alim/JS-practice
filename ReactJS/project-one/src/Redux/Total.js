@@ -3,9 +3,10 @@ import { useSelector } from "react-redux";
 
 const Total = () => {
   const total = useSelector((state) => state.total);
+  const user = useSelector((state) => state.loginDet);
   return (
     <div className="customeDiv">
-      <h2>Total Component</h2>
+      <h3>Total Component - Users:- {user}</h3>
       <hr />
       <h3>Total - {total}</h3>
     </div>
