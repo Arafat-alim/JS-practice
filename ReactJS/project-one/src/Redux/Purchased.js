@@ -11,14 +11,15 @@ const Purchased = () => {
     let obj = { pName, cost };
     dispatch({ type: "PURCHASED", payLoad: obj }); //it calls the reducer function
   };
+
   return (
     <div className="customeDiv">
       <h3>Purchased Component</h3>
       <hr />
       <select onChange={(e) => purchaseHandler(e)}>
-        {products.map((product) => {
+        {products.map((product, index) => {
           return (
-            <option value={product.cost} key={product.id}>
+            <option value={product.cost} key={product.id.toString()}>
               {product.pName} - ${product.cost}
             </option>
           );

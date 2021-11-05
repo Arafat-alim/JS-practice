@@ -16,6 +16,7 @@ li.mainMenu {
   margin: 10px;
   border: 2px solid grey;
   width: 350px;
+  min-height: 200px;
   display: inline-block;
   padding: 5px;
   vertical-align: top;
@@ -24,4 +25,7 @@ li.mainMenu {
 select {
   font-size: large;
   width: 100%;
+}
+li {
+  cursor: pointer;
 }
