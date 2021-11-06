@@ -1,8 +1,9 @@
 import "./App.css";
-import Purchased from "./Redux/Purchased";
-import Cart from "./Redux/Cart";
-import Total from "./Redux/Total";
-import Login from "./Redux/Login";
+
+import Login from "./Redux-Toolkit/Login";
+import Cart from "./Redux-Toolkit/Cart";
+import Purchased from "./Redux-Toolkit/Purchased";
+import Total from "./Redux-Toolkit/Total";
 
 function App() {
   return (

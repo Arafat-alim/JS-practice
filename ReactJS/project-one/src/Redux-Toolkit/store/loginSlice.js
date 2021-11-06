@@ -8,7 +8,7 @@ const loginSlice = createSlice({
   initialState: initData,
   reducers: {
     userLogin: (state, action) => {
-      state.loginDet = action.loginDet;
+      state.loginDet = action.payload;
     },
   },
 });
