@@ -1,17 +1,10 @@
 import "./App.css";
-
-import Login from "./Redux-Toolkit/Login";
-import Cart from "./Redux-Toolkit/Cart";
-import Purchased from "./Redux-Toolkit/Purchased";
-import Total from "./Redux-Toolkit/Total";
+import Fetch from "./httpCall/Fetch";
 
 function App() {
   return (
     <div className="App">
-      <Login />
-      <Purchased />
-      <Cart />
-      <Total />
+      <Fetch />
     </div>
   );
 }
