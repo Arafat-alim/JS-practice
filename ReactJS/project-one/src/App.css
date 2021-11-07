@@ -55,7 +55,19 @@ button:hover {
 .box1 {
   box-sizing: border-box;
   border: 1px solid red;
-  width: 50%;
+  width: 400px;
   min-height: auto;
   margin: 1rem;
+  display: inline-block;
+  text-align: left;
+  padding: 15px;
+}
+
+.box2 {
+  border: 1px solid blue;
+  width: 400px;
+  height: auto;
+  margin: 10px;
+  text-align: left;
+  display: inline-block;
 }
