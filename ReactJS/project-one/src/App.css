@@ -71,3 +71,10 @@ button:hover {
   text-align: left;
   display: inline-block;
 }
+
+.error {
+  border: 5px solid red;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}

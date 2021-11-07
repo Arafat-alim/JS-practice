@@ -1,17 +1,27 @@
 import React, { useState } from "react";
 import Todo from "./Component/Todo";
 import User from "./Component/User";
+import Error from "./Component/Error";
 
 const Fetch = () => {
   const [users, setUsers] = useState([]);
   const [todos, setTodos] = useState([]);
   const [userData, setUserData] = useState(true);
+  const [errorFlag, setErrorFlag] = useState(false);
   const fetchingUser = () => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
+    fetch("https://jsonplaceholder.typicode.com/user")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error");
+        }
+      })
       // .then((data) => console.log(data));
-      .then((data) => setUsers(data));
-
+      .then((data) => setUsers(data))
+      .catch((error) => {
+        setErrorFlag(true);
+      });
     setUserData(true);
   };
   const fetchTodos = () => {
@@ -23,6 +33,10 @@ const Fetch = () => {
     setUserData(false);
   };
 
+  //! Before render show here we put our error boundary
+  if (errorFlag) {
+    return <Error />;
+  }
   return (
     <div>
       <div className="topbar"></div>
